@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    background-color: #242333;
+    color: #ffff;
+}
+
+li {
+    list-style: none;
+}
+
+.movie-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#movies-choice {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px 5px;
+    outline: 0;
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    display: flex;
+}
+
+.showcase li {
+    display: flex;
+}
+
+small {
+    display: flex;
+    justify-content: space-between;
+}
+
+#screen {
+    width: 100%;
+    background-color: #ffffff;
+    height: 70px;
+    margin: 10px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.seat {
+    background-color: darkgrey;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.occupied {
+    background-color: crimson;
+}
+
+.selected {
+    background-color: cyan;
+}
+
+.row {
+    display: flex;
+}
+
+.seat:nth-child(2) {
+    margin-right: 18px;
+}
+
+.seat:nth-last-child(2) {
+    margin-left: 18px;
+}
+
+.row .seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+span {
+    color: aqua;
+}
+
+.seats-container {
+    margin: 20px 0;
+    perspective: 1000px;
+}
